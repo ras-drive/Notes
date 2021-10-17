@@ -13,7 +13,8 @@ int main() {
     while (true) {
         getline(std::cin, temp);
         // list notes functionality
-        if (stringCleaner(temp) == "list") {
+        if (stringCleaner(temp).empty()) {
+        } else if (stringCleaner(temp) == "list") {
             if (notes.empty()) {
                 std::cout << "You need to add a note to list them!\n";
             } else {
@@ -22,7 +23,7 @@ int main() {
                 }
             }
         // remove from list functionality
-        }  else if (stringSplitter(stringCleaner(temp))[0] == "remove" &&
+        } else if (stringSplitter(stringCleaner(temp))[0] == "remove" &&
         stringSplitter(stringCleaner(temp)).size() > 1) {
             try {
                 int num = std::stoi(stringSplitter(stringCleaner(temp))[1]);
