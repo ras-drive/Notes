@@ -22,7 +22,8 @@ int main() {
                 }
             }
         // remove from list functionality
-        }  else if (stringSplitter(stringCleaner(temp))[0] == "remove") {
+        }  else if (stringSplitter(stringCleaner(temp))[0] == "remove" &&
+        stringSplitter(stringCleaner(temp)).size() > 1) {
             try {
                 int num = std::stoi(stringSplitter(stringCleaner(temp))[1]);
                 if (num > 0 && num <= notes.size()) {
