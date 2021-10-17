@@ -7,6 +7,7 @@
 #ifndef NOTES_APP_NOTES_H
 #define NOTES_APP_NOTES_H
 
+// simple function to set the strings to lowercase
 static std::string stringCleaner(std::string &str) {
     std::string result;
     for (char i : str) {
@@ -15,6 +16,7 @@ static std::string stringCleaner(std::string &str) {
     return result;
 }
 
+// function to split the strings for the remove functionality
 static std::vector<std::string> stringSplitter(const std::string& str) {
     std::string word;
     std::istringstream iss{str};
@@ -26,7 +28,8 @@ static std::vector<std::string> stringSplitter(const std::string& str) {
     return words;
 }
 
-void start() {
+// function to introduce the user to the app
+static void start() {
     std::cout << "Welcome to the notes app!\n\n"
                  "start typing to take a note.\n"
                  "type \"list\" to display your notes.\n"
