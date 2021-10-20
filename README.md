@@ -10,6 +10,4 @@ $ cd build/
 $ cmake ../
 $ make
 $ ./Notes
-###-optional-###
-$ ln -s ./Notes ../
 ```
