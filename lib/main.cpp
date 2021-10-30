@@ -2,8 +2,8 @@
 #include <vector>
 #include <iterator>
 
-#include "notes.h"
-#include "csv.h"
+#include "notes.hpp"
+#include "csv.hpp"
 
 bool saveFolderEmpty = false;
 
