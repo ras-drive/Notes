@@ -7,4 +7,4 @@ set(CMAKE_CXX_FLAGS  "-pthread")
 # target_link_libraries(-pthread)
 
 
-add_executable(Notes lib/main.cpp lib/notes.h lib/csv.h)
+add_executable(Notes lib/main.cpp lib/notes.hpp lib/csv.hpp)

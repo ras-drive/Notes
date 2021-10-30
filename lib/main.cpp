@@ -129,7 +129,6 @@ void readFromFile(std::vector<std::string> &notes) {
 }
 
 
-
 int main() {
     std::vector<std::string> notes;
     std::string temp;
